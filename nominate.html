@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+    <!--Color Switcher Mockup-->
+    <link href="css/color-switcher-design.css" rel="stylesheet">
+<!--Color Switcher Mockup-->
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Corporate Excellence Awards Nomination Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr) repeat(7, 1fr); /* Adjusted grid template columns */
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .form-container, .info-container {
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            grid-column: 6 / span 7; /* Adjusted grid column for form */
+        }
+        .info-container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            background-attachment: fixed;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            grid-column: 1 / span 5; /* Adjusted grid column for process */
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .radio-group label {
+            font-weight: normal;
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        /* Media Query for Mobile Devices */
+ 
+        /* Header Styles */
+        
+        
+        
+        .contact-list-one {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-list-one li {
+            margin-right: 15px;
+            color: white;
+        }
+        .contact-list-one li i {
+            margin-right: 5px;
+        }
+        .social-icon-three {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .social-icon-three li {
+            margin-left: 10px;
+        }
+        .social-icon-three li a {
+            color: white;
+            font-size: 16px;
+        }
+    
+        
+        .logo img {
+            height: 40px;
+        }
+        .main-menu {
+            display: flex;
+        }
+        .main-div{
+            background-image: linear-gradient(#00082E,#021780);
+        }
+        .main-bar{
+            position:sticky !important;
+            top:0 ;
+        }
+        
+        .outer-box {
+            display: flex;
+            align-items: center;
+        }
+        .btn-box {
+            margin-left: 20px;
+        }
+        
+
+        @media (max-width: 768px) {
+            .container {
+                display: block;
+            }
+            .form-container, .info-container {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .form-container {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="main-bar">
+            <!-- Main Header-->
+            <header class="main-header header-style-two">
+        
+                <!-- Header top -->
+                <div class="header-top">
+                    <div class="auto-container">
+                        <div class="inner-container pb-1 pt-1">
+                            <div class="top-left">
+                                <ul class="contact-list-one">
+                                    <li><i class="flaticon-location"></i> 13-4,Madhapur,Hyderabad <strong>Address</strong></li>
+                                    <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 6pm <strong>Timing</strong></li>
+                                    <li><i class="flaticon-email-1"></i> <a href="mailto:blea@brainovision.in">blea@brainovision.in</a> <strong>Mail to us</strong></li>
+                                </ul>
+                            </div>
+        
+                            <div class="top-right">
+                                <ul class="social-icon-three">
+                                    <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Header Top -->
+                
+                <!-- Header Lower -->
+                <div class="header-lower">
+                    <div class="auto-container">    
+                        <!-- Main box -->
+                        <div class="main-box">
+                            <div class="logo-box">
+                                <div class="logo"><a href="./index.html"><img src="./LOGO (1).jpg" alt="" title=""></a></div>
+                            </div>
+        
+                            <div class="nav-outer">
+        
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->      
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                        <ul class="navigation clearfix">
+                                            <li class=""><a href="index.html">Home</a></li>
+                                            <li class=""><a href="about.html">About</a></li>
+                                    
+                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="gallery.html"> Gallery</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                
+                                <!-- Main Menu End-->
+                                <div class="outer-box clearfix">
+                                    <!-- Search Btn -->
+                                    <div class="search-box-btn search-btn search-box-outer"><span class="icon fa fa-search"></span></div>
+                                    
+                                    <!-- Quote Btn -->
+                                    <div class="btn-box">
+                                        <a href="nominate.html" class="theme-btn btn-style-one"><span class="btn-title"> Nominate</span></a>
+                                    </div>
+                                    
+                                    <button class="nav-toggler"><i class="flaticon flaticon-menu-2"></i></button>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Sticky Header  -->
+                <div class="sticky-header">
+                    <div class="auto-container">            
+        
+                        <div class="main-box">
+                            <div class="logo-box">
+                                <div class="logo"><a href="index.html"><img src="./LOGO (1).jpg" alt="" title=""></a></div>
+                                <div class="upper-right">
+                                    <div class="search-box">
+                                        <button class="search-btn mobile-search-btn"><i class="flaticon-search-2"></i></button>
+                                    </div>
+                                    <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><i class="flaticon-menu"></i></a>
+                                </div>
+                            </div>
+                            
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </div>
+                    </div>
+                </div><!-- End Sticky Menu -->
+        
+                <!-- Mobile Header -->
+                <div class="mobile-header">
+                    <div class="logo"><a href="index.html"><img src="./LOGO (1).jpg" alt="" title=""></a></div>
+        
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <div class="outer-box">
+                            <!-- Search Btn -->
+                            <div class="search-box">
+                                <button class="search-btn mobile-search-btn"><i class="flaticon-search-2"></i></button>
+                            </div>
+        
+                            <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><i class="flaticon-menu"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Mobile Menu  -->
+                <div class="mobile-menu">
+                    <div class="menu-backdrop"></div>
+                    
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    <nav class="menu-box">
+                        <div class="upper-box">
+                            <div class="nav-logo"><a href="index.html"><img src="./LOGO (1).jpg" alt="" title=""></a></div>
+                            <div class="close-btn"><i class="icon flaticon-close"></i></div>
+                        </div>
+        
+                        <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+        
+                        <ul class="contact-list-one">
+                            <li><i class="flaticon-location"></i> 203 Madison Ave, NY, USA <strong>Address</strong></li>
+                            <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 6pm <strong>Timeing</strong></li>
+                            <li><i class="flaticon-email-1"></i> <a href="mailto:envato@gmail.com">envato@gmail.com</a> <strong>Mail to us</strong></li>
+                        </ul>
+        
+                        <ul class="social-links">
+                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-dribbble"></span></a></li>
+                        </ul>
+                    </nav>
+                </div><!-- End Mobile Menu -->
+        
+                <!-- Header Search -->
+                <div class="search-popup">
+                    <button class="close-search"><i class="flaticon-close"></i></button>
+                    <form method="post" action="blog.html">
+                        <div class="form-group">
+                            <input type="search" name="search-field" value="" placeholder="Search" required="">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Header Search -->
+        
+            </header>
+            <!--End Main Header -->
+        
+        
+            <!-- Hidden Bar -->
+            <section class="hidden-bar">
+                <div class="inner-box">
+                    <div class="title-box">
+                        <h2>Contact Us</h2>
+                        <div class="cross-icon"><span class="fa fa-times"></span></div>
+                    </div>
+                    
+                    <!--Appointment Form-->
+                    <div class="form-style-one">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" name="username" class="username" placeholder="Your Name *">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="email" placeholder="Your Email *">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="phone" value="" placeholder="Your Phone*" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contact_message" class="message" placeholder="Text Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="theme-btn btn-style-one" type="button" id="submit" name="submit-form"><span class="btn-title">Submit Now</span> </button>
+                            </div>
+                        </form>
+                    </div>
+        
+                    <ul class="contact-list-one">
+                        <li><i class="flaticon-location"></i> 203 Madison Ave, NY, USA <strong>Address</strong></li>
+                        <li><i class="flaticon-alarm-clock-1"></i>Monday - Friday 9am - 6pm <strong>Timeing</strong></li>
+                        <li><i class="flaticon-email-1"></i> <a href="mailto:envato@gmail.com">envato@gmail.com</a> <strong>Mail to us</strong></li>
+                    </ul>
+                </div>
+            </section>
+            <!--End Hidden Bar -->
+        </div>
+
+        <div class="container main-div">
+  
+            <div class="info-container">
+                <h2>Nomination Process</h2>
+                <p><strong>Step 1:</strong> Fill out the nomination form with the nominee’s details, including name, email, company, designation, gender, award category, and reason for nomination.</p>
+                <p><strong>Step 2:</strong> Submit the completed form. You will receive a confirmation email with the details of your nomination.</p>
+                <p><strong>Step 3:</strong> Our selection committee will review all nominations and shortlist candidates based on the provided information.</p>
+                <p><strong>Step 4:</strong> Shortlisted candidates will be contacted for further details and an interview if necessary.</p>
+                <p><strong>Step 5:</strong> Winners will be announced at the Corporate Excellence Awards ceremony. All nominees will be notified of the results.</p>
+                <p>Thank you for participating and recognizing excellence in the corporate world!</p>
+            </div>
+            <div class="form-container">
+                <h1>Nomination Form</h1>
+                <form action="/submit_nomination" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" name="designation" required>
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" required>   
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>        
+                    <div class="radio-group">
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <label for="category">Category of Award:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="leadership">Digital Transformation Excellence Award</option>
+                        <option value="innovation">Marketing and Communications Excellence Award</option>
+                        <option value="customer_service">Sustainability Leadership Excellence Award</option>
+                        <option value="teamwork">Industry Contribution Excellence Award</option>
+                        <option value="leadership">Outstanding Leadership Excellence Award</option>
+                        <option value="innovation">Innovative Enterprise Award Honors</option>
+                        <option value="customer_service"> Emerging Start-Up Excellence Award</option>
+                        <option value="teamwork"> Excellence in Customer Service Award</option>
+                    </select>
+
+                    <label for="reason">Reason for Nomination:</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+       
+          
+        </div><br>
+    </div>
+    <footer class="main-footer style-three">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="auto-container">
+                <div class="row">
+                    <!--Big Column-->
+                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <!--Footer Column-->
+                            <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="./LOGO (1).jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <p>We have very good strength in innovative technology and tools with over 35 years of experience. We makes long-term investments goal in global companies in different sectors, mainly in Europe and other countries.</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Footer Column-->
+                            <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget lnks-widget">
+                                    <h2 class="widget-title">Useful Links</h2>
+                                    <ul class="user-links">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#dignitaries">Dignitaries</a></li>
+                                        <li><a href="#patrons">Patrons</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Big Column-->
+                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <!--Footer Column-->
+                                <div class="footer-widget contact-widget">
+                                    <h2 class="widget-title">Get in Touch</h2>
+                                     <!--Footer Column-->
+                                    <div class="widget-content">
+                                        <ul class="contact-list-three">
+                                            <li>
+                                                <i class="icon flaticon-alarm-clock-1"></i>
+                                                <div class="text">
+                                                    Monday - Friday 9am - 6pm <br> 
+                                                    <strong>Timeing</strong>
+                                                </div>
+                                            </li>
+    
+                                            <li>
+                                                <i class="icon flaticon-email-1"></i>
+                                                <div class="text">
+                                                    <a href="mailto:blea@brainovision.in">blea@brainovision.in</a><br>
+                                                    <strong>Mail to us</strong>
+                                                </div>
+                                            </li>
+    
+                                            <li>
+                                                <i class="icon flaticon-location"></i>
+                                                <div class="text">
+                                                    
+                                                    2-3,Madhapur,Hyderabad
+                                                    <strong>Address</strong>
+                                                </div>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget">
+                                    <h2 class="widget-title">Developed By</h2>
+                                    <div class="widget-content">
+                                        <ul class="events-list">
+                                          
+                                         
+                                            <li>P Avinash</li>
+    
+                                            <li>P Sasi Kiran</li>
+                                            <li>R Pavan Kumar</li>
+                                            <li>P Sudheer Varma</li>
+                                            <li>D.Leela Krishnama Raju</li>
+                                        </ul>
+    
+                                        <ul class="social-icon-two">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        </ul>
+                                    </div>       
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="copyright-text">Copyright © 2024 All Rights Reserved by <a href="#">Brainovision</a></div>
+        </div>
+    </footer>
+
+</body>
+</html>
